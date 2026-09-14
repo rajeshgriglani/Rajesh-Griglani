@@ -1,0 +1,122 @@
+import { MediaItem } from '../../types/media';
+
+export const MEDIA_ITEMS: MediaItem[] = [
+  {
+    id: 'med-desi-decoder',
+    slug: 'desi-decoder-exclusive-interview',
+    type: 'interview',
+    platform: 'Desi Decoder (YouTube)',
+    date: 'Exclusive Interview',
+    title: 'Rajesh Griglani Exclusive Interview | Rahul Gandhi, Congress Scam & BJP Manipulation',
+    description:
+      'An unvarnished, hard-hitting broadcast dialogue exploring Rahul Gandhi’s political evolution, analyzing counter-narrative strategies against disinformation, and dissecting ground election mechanics.',
+    linkUrl: 'https://youtu.be/Egwf6Fng0BM?si=XnmCLw7m45KA6T-s',
+    actionText: 'WATCH INTERVIEW →',
+    status: 'published',
+  },
+  {
+    id: 'med-political-insights',
+    slug: 'exclusive-interview-rahul-gandhi-bjp-congress',
+    type: 'interview',
+    platform: 'National Video Dialogue',
+    date: 'Special Broadcast',
+    title: 'Exclusive Interview with Rajesh Griglani: Insights on Rahul Gandhi, BJP, Congress, Modi & Shah',
+    description:
+      'Comprehensive analytical interview dissecting contemporary Indian political power structures, the mechanics of Modi-Shah election machinery, and the revival of grassroots secular leadership.',
+    linkUrl: 'https://youtu.be/LOfIF7fU5H0?si=cPC82SMgszo7Awic',
+    actionText: 'WATCH ON YOUTUBE →',
+    status: 'published',
+  },
+  {
+    id: 'med-toi-membership',
+    slug: 'times-of-india-membership-facilitator',
+    type: 'press',
+    platform: 'The Times of India',
+    date: 'August 2021',
+    title: "Congress Appoints 'Membership Facilitator' Rajesh Griglani to Steer Grounded Membership Drive",
+    description:
+      'The Times of India reports on the AICC assigning senior organizational leader Rajesh Griglani to spearhead the grounded party membership drive, revitalizing booth-level cadre enrollment across Goa.',
+    linkUrl: 'http://timesofindia.indiatimes.com/articleshow/85548577.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst',
+    actionText: 'READ TOI ARTICLE →',
+    status: 'published',
+  },
+  {
+    id: 'med-ani-social-media',
+    slug: 'ani-congress-national-executive-social-media',
+    type: 'press',
+    platform: 'ANI News (Asian News International)',
+    date: 'January 2020',
+    title: 'Congress Appoints Rajesh Griglani as National Executive Member of Social Media Department',
+    description:
+      'National news wire dispatch reporting the Indian National Congress leadership appointing Rajesh Griglani to the National Executive Committee of the Social Media Department to direct nationwide communication strategies and digital outreach.',
+    linkUrl: 'https://www.aninews.in/news/national/general-news/congress-appoints-gaurav-pandhi-tarini-dhody-as-national-social-media-co-ordinators20200104213823/',
+    actionText: 'READ ANI DISPATCH →',
+    status: 'published',
+  },
+  {
+    id: 'med-tribune-goa',
+    slug: 'the-tribune-aicc-coordinator-goa-elections',
+    type: 'press',
+    platform: 'The Tribune Online',
+    date: 'Assembly Election Bureau',
+    title: 'AICC Appoints Rajesh Griglani as Coordinator for Goa Assembly Elections',
+    description:
+      'Press coverage detailing the All India Congress Committee (AICC) appointing senior strategist Rajesh Griglani as coordinator for the Goa Assembly elections to manage ground operations, training, and strategic campaign alignment.',
+    linkUrl: 'https://www.thetribuneonline.com/art-culture-archives83.html',
+    actionText: 'READ TRIBUNE REPORT →',
+    status: 'published',
+  },
+  {
+    id: 'med-goa-speech-fb',
+    slug: 'aicc-strategic-address-goa-campaign',
+    type: 'speech',
+    platform: 'Official Public Broadcast',
+    date: 'Goa Assembly Campaign',
+    title: 'AICC Strategic Address: Cadre Mobilization & Grassroots Campaign in Goa Assembly',
+    description:
+      'Official address and strategic campaign briefing on booth-level preparedness, voter contact mechanics, and organizing secular democratic resistance during the Goa Assembly elections.',
+    linkUrl: 'https://www.facebook.com/share/p/1EvxUYVRw7/',
+    actionText: 'VIEW BROADCAST →',
+    status: 'published',
+  },
+  {
+    id: 'med-cadre-induction-fb',
+    slug: 'grassroots-cadre-induction-membership',
+    type: 'event',
+    platform: 'Official Field Dispatch',
+    date: 'Cadre Leadership Conclave',
+    title: 'Grassroots Cadre Induction & Grounded Membership Drive Strategy',
+    description:
+      'Field address and public record detailing the principles of democratic cadre enrollment, door-to-door civic dialogue, and booth-level organizational governance.',
+    linkUrl: 'https://www.facebook.com/share/p/1JvqazDScc/',
+    actionText: 'VIEW FIELD DISPATCH →',
+    status: 'published',
+  },
+  {
+    id: 'med-roots-review',
+    slug: 'roots-of-resistance-literary-review',
+    type: 'press',
+    platform: 'Literary Critique & Review',
+    date: 'Featured Review',
+    title: "Roots of Resistance: A Gujarat Worker's Unflinching Memoir of Secular Defense",
+    description:
+      "Critical review examining Rajesh Bhojraj Griglani's seminal political memoir, exploring 2002 Gujarat survival, partition generational trauma, and the frontline struggle for constitutional secularism in India.",
+    linkUrl: 'https://notionpress.com/in/read/roots-of-resistance-1410191955-hardcover',
+    actionText: 'EXPLORE BOOK REVIEW →',
+    status: 'published',
+  },
+  {
+    id: 'med-national-podcast',
+    slug: 'the-national-discourse-podcast',
+    type: 'podcast',
+    platform: 'The National Discourse',
+    date: 'Author Podcast',
+    title: "The Ideological Battle for India's Soul: Roots of Resistance in Conversation",
+    description:
+      'In-depth discussion on the psychological and historical currents shaping modern Indian politics, ideological polarization, and the vital role of grassroots cadre training.',
+    linkUrl: 'https://youtube.com/@griglani',
+    actionText: 'LISTEN TO BROADCAST →',
+    status: 'published',
+  },
+];
+

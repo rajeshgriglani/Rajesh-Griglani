@@ -1,0 +1,430 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Newsreader', 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Cinzel', 'Playfair Display', Georgia, serif;
+  }
+
+  body {
+    background-color: #0b0c0e;
+    color: #ede9e1;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom editorial scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090a0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272a30;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c8a96e;
+}
+
+/* Restrained gold subtle shimmer & glow */
+.gold-glow {
+  box-shadow: 0 0 35px -10px rgba(200, 169, 110, 0.15);
+}
+
+.gold-border-subtle {
+  border-color: rgba(200, 169, 110, 0.22);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f7ecd5 0%, #d8b879 50%, #b8934b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #dfc082 0%, #c49d52 50%, #9a7633 100%);
+}
+
+.dark-card-gradient {
+  background: linear-gradient(180deg, rgba(26, 28, 33, 0.85) 0%, rgba(16, 17, 21, 0.95) 100%);
+}
+
+.editorial-divider {
+  background: linear-gradient(90deg, transparent 0%, rgba(200, 169, 110, 0.3) 50%, transparent 100%);
+}
+
+/* ==========================================================================
+   LIGHT MODE (AUTOMATIC VIA DEVICE OR EXPLICIT OVERRIDE)
+   ========================================================================== */
+
+html.light {
+  color-scheme: light;
+}
+
+html.light body {
+  background-color: #faf8f5 !important;
+  color: #1a1c23 !important;
+}
+
+/* Base Headings & High Contrast Typography */
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4,
+html.light h5,
+html.light h6 {
+  color: #12141a;
+}
+
+/* Background canvas overrides */
+html.light .bg-\[\#07080a\],
+html.light .bg-\[\#090a0d\],
+html.light .bg-\[\#0a0b0d\],
+html.light .bg-\[\#0a0b0e\],
+html.light .bg-\[\#0b0c10\],
+html.light .bg-\[\#0c0d10\],
+html.light .bg-\[\#0c0d11\],
+html.light .bg-\[\#0c0e12\],
+html.light .bg-\[\#0d0e12\],
+html.light .bg-\[\#0e1014\],
+html.light .bg-\[\#0e1015\],
+html.light .bg-\[\#0e1017\],
+html.light .bg-\[\#0b0c0e\] {
+  background-color: #faf8f5 !important;
+}
+
+/* Card, Section & Container Overrides */
+html.light .bg-\[\#101217\],
+html.light .bg-\[\#111317\],
+html.light .bg-\[\#111318\],
+html.light .bg-\[\#111319\],
+html.light .bg-\[\#12141a\],
+html.light .bg-\[\#12141c\],
+html.light .bg-\[\#13151b\],
+html.light .bg-\[\#13151c\],
+html.light .bg-\[\#14161b\],
+html.light .bg-\[\#14161d\],
+html.light .bg-\[\#14161e\],
+html.light .bg-\[\#15171d\],
+html.light .bg-\[\#15171f\],
+html.light .bg-\[\#151720\],
+html.light .bg-\[\#16181f\],
+html.light .bg-\[\#161820\],
+html.light .bg-\[\#161822\],
+html.light .bg-\[\#161922\],
+html.light .bg-\[\#161a24\],
+html.light .bg-\[\#171920\],
+html.light .bg-\[\#171922\],
+html.light .bg-\[\#171924\],
+html.light .bg-\[\#171b26\],
+html.light .bg-\[\#181a22\],
+html.light .bg-\[\#181a23\],
+html.light .bg-\[\#181a24\],
+html.light .bg-\[\#181b23\],
+html.light .bg-\[\#181b24\],
+html.light .bg-\[\#191b24\],
+html.light .bg-\[\#1a1c24\],
+html.light .bg-\[\#1a1d26\],
+html.light .bg-\[\#1b1e28\],
+html.light .bg-\[\#1b2230\],
+html.light .bg-\[\#1c1f26\],
+html.light .bg-\[\#1c1f28\],
+html.light .bg-\[\#1c1f2a\],
+html.light .bg-\[\#1c202a\],
+html.light .bg-\[\#1c202c\],
+html.light .bg-\[\#1e2129\],
+html.light .bg-\[\#1e222c\],
+html.light .bg-\[\#1e222d\],
+html.light .bg-\[\#1f222a\],
+html.light .bg-\[\#1f222b\],
+html.light .bg-\[\#1f222c\],
+html.light .bg-\[\#1f232c\],
+html.light .bg-\[\#1f232e\],
+html.light .bg-\[\#20232c\],
+html.light .bg-\[\#20232e\],
+html.light .bg-\[\#202430\],
+html.light .bg-\[\#202534\],
+html.light .bg-\[\#222634\],
+html.light .bg-\[\#252936\],
+html.light .bg-\[\#252a38\],
+html.light .bg-\[\#272a33\],
+html.light .bg-\[\#272d3e\],
+html.light .bg-\[\#282a34\],
+html.light .bg-\[\#282d3d\],
+html.light .bg-\[\#2a2e3b\],
+html.light .bg-\[\#2c3246\] {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.04);
+}
+
+/* Subtle Interactive States & Pill Overrides */
+html.light .hover\:bg-\[\#1c1f2b\]:hover,
+html.light .hover\:bg-\[\#1e212d\]:hover,
+html.light .hover\:bg-\[\#1e222c\]:hover,
+html.light .hover\:bg-\[\#20232e\]:hover,
+html.light .hover\:bg-\[\#252936\]:hover,
+html.light .hover\:bg-\[\#282d3d\]:hover,
+html.light .hover\:bg-\[\#2c3246\]:hover {
+  background-color: #f2eee5 !important;
+}
+
+/* Border Overrides */
+html.light .border-\[\#171922\],
+html.light .border-\[\#1c1f28\],
+html.light .border-\[\#1e222c\],
+html.light .border-\[\#1f222c\],
+html.light .border-\[\#20232d\],
+html.light .border-\[\#202430\],
+html.light .border-\[\#21242d\],
+html.light .border-\[\#212530\],
+html.light .border-\[\#212532\],
+html.light .border-\[\#222530\],
+html.light .border-\[\#222630\],
+html.light .border-\[\#222632\],
+html.light .border-\[\#222633\],
+html.light .border-\[\#222634\],
+html.light .border-\[\#222734\],
+html.light .border-\[\#232731\],
+html.light .border-\[\#232732\],
+html.light .border-\[\#232733\],
+html.light .border-\[\#232734\],
+html.light .border-\[\#242832\],
+html.light .border-\[\#242833\],
+html.light .border-\[\#242834\],
+html.light .border-\[\#242835\],
+html.light .border-\[\#242936\],
+html.light .border-\[\#252936\],
+html.light .border-\[\#252a38\],
+html.light .border-\[\#262a35\],
+html.light .border-\[\#262a36\],
+html.light .border-\[\#262b38\],
+html.light .border-\[\#272b36\],
+html.light .border-\[\#272b38\],
+html.light .border-\[\#272c38\],
+html.light .border-\[\#282c39\],
+html.light .border-\[\#282c3a\],
+html.light .border-\[\#282d3b\],
+html.light .border-\[\#282d3c\],
+html.light .border-\[\#282d3e\],
+html.light .border-\[\#292e3b\],
+html.light .border-\[\#292f3e\],
+html.light .border-\[\#2a2d36\],
+html.light .border-\[\#2a2f3d\],
+html.light .border-\[\#2b2f3a\],
+html.light .border-\[\#2b303d\],
+html.light .border-\[\#2b3040\],
+html.light .border-\[\#2c313e\],
+html.light .border-\[\#2c3140\],
+html.light .border-\[\#2d313c\],
+html.light .border-\[\#2d3240\],
+html.light .border-\[\#2d3344\],
+html.light .border-\[\#2e3340\],
+html.light .border-\[\#2e3342\],
+html.light .border-\[\#2f333e\],
+html.light .border-\[\#2f3442\],
+html.light .border-\[\#2f3544\],
+html.light .border-\[\#303544\],
+html.light .border-\[\#323644\],
+html.light .border-\[\#333847\],
+html.light .border-\[\#343948\],
+html.light .border-\[\#343a4a\],
+html.light .border-\[\#343b4d\],
+html.light .border-\[\#343b4f\],
+html.light .border-\[\#363c4e\],
+html.light .border-\[\#383e4e\],
+html.light .border-\[\#393d48\],
+html.light .border-\[\#3b404d\],
+html.light .border-\[\#3c4150\],
+html.light .border-\[\#3e4456\],
+html.light .border-\[\#40465a\] {
+  border-color: #e5e0d4 !important;
+}
+
+html.light .border-white\/5,
+html.light .border-white\/10,
+html.light .border-white\/15,
+html.light .border-white\/20 {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Primary High-Contrast Text Overrides */
+html.light .text-\[\#fbf9f5\],
+html.light .text-\[\#faf8f5\],
+html.light .text-\[\#faf7f0\],
+html.light .text-\[\#faf6ee\],
+html.light .text-\[\#faedd4\],
+html.light .text-\[\#faebd0\],
+html.light .text-\[\#f8f5ee\],
+html.light .text-\[\#f8f4eb\],
+html.light .text-\[\#f8ecd4\],
+html.light .text-\[\#f7ecd5\],
+html.light .text-\[\#f5f2eb\],
+html.light .text-\[\#f5f2ea\],
+html.light .text-\[\#f5f1e8\],
+html.light .text-\[\#f3efe6\],
+html.light .text-\[\#f3eee3\],
+html.light .text-\[\#f1ece1\],
+html.light .text-\[\#f0ece1\],
+html.light .text-\[\#eeddb7\],
+html.light .text-\[\#ece8e0\],
+html.light .text-\[\#ece8df\],
+html.light .text-\[\#ece6d5\],
+html.light .text-\[\#ece5d8\],
+html.light .text-\[\#ebe6d8\],
+html.light .text-\[\#eae5d9\],
+html.light .text-\[\#e8e4d8\],
+html.light .text-\[\#e5decb\],
+html.light .text-\[\#e4decb\],
+html.light .text-\[\#dfd9cc\],
+html.light .text-\[\#ded9cc\],
+html.light .text-\[\#ded8cb\],
+html.light .text-\[\#ded8ca\],
+html.light .text-\[\#ded7c8\],
+html.light .text-white {
+  color: #12141a !important;
+}
+
+/* Body & Medium Contrast Text */
+html.light .text-\[\#cfc8ba\],
+html.light .text-\[\#cac4b7\],
+html.light .text-\[\#c5beb0\],
+html.light .text-\[\#c4bdb0\],
+html.light .text-\[\#c2bbb0\],
+html.light .text-\[\#c0b9ab\],
+html.light .text-\[\#bfb8aa\],
+html.light .text-\[\#b8b1a2\],
+html.light .text-\[\#b5ad9e\],
+html.light .text-\[\#b0a99c\],
+html.light .text-\[\#a8a192\],
+html.light .text-\[\#a69f90\],
+html.light .text-\[\#a49d8f\],
+html.light .text-\[\#a49d8e\],
+html.light .text-\[\#a49c8f\],
+html.light .text-\[\#a49a88\],
+html.light .text-\[\#a39c8e\],
+html.light .text-\[\#a19989\],
+html.light .text-\[\#a09888\],
+html.light .text-\[\#9f9889\],
+html.light .text-\[\#9e9788\],
+html.light .text-\[\#9e9687\],
+html.light .text-\[\#9d9688\],
+html.light .text-\[\#9d9586\],
+html.light .text-\[\#9d9585\],
+html.light .text-\[\#9c9586\],
+html.light .text-\[\#9b9485\] {
+  color: #333847 !important;
+}
+
+/* Muted & Meta Label Text */
+html.light .text-\[\#918a7c\],
+html.light .text-\[\#90897b\],
+html.light .text-\[\#8f887b\],
+html.light .text-\[\#8f887a\],
+html.light .text-\[\#8f8879\],
+html.light .text-\[\#8e8779\],
+html.light .text-\[\#8c8577\],
+html.light .text-\[\#8b8475\],
+html.light .text-\[\#8a8376\],
+html.light .text-\[\#827b6d\],
+html.light .text-\[\#80796c\],
+html.light .text-\[\#7e776b\],
+html.light .text-\[\#7e776a\],
+html.light .text-\[\#7e7769\],
+html.light .text-\[\#7d776a\],
+html.light .text-\[\#7d7667\],
+html.light .text-\[\#7a7466\],
+html.light .text-\[\#797365\],
+html.light .text-\[\#797263\],
+html.light .text-\[\#757065\],
+html.light .text-\[\#736c5f\],
+html.light .text-\[\#6f695d\],
+html.light .text-\[\#6d685e\],
+html.light .text-\[\#6d675b\],
+html.light .text-\[\#6d665a\],
+html.light .text-\[\#696356\],
+html.light .text-\[\#635e53\] {
+  color: #5f6575 !important;
+}
+
+/* High-Legibility Gold/Brass Accents */
+html.light .text-\[\#c8a96e\],
+html.light .text-\[\#d8be86\],
+html.light .text-\[\#d9be85\],
+html.light .text-\[\#d6be8c\],
+html.light .text-\[\#f0d49b\] {
+  color: #92671c !important;
+}
+
+/* Ensure Text Inside Gold Action Buttons Remains Dark */
+html.light button.bg-\[\#c8a96e\] *,
+html.light a.bg-\[\#c8a96e\] *,
+html.light .bg-\[\#c8a96e\] {
+  color: #0f1116;
+}
+
+/* Navigation Header Light Background */
+html.light #main-navigation-header {
+  background-color: rgba(251, 249, 245, 0.94) !important;
+  border-bottom-color: rgba(222, 216, 204, 0.8) !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Light Card & Editorial Dividers */
+html.light .dark-card-gradient {
+  background: linear-gradient(180deg, #ffffff 0%, #faf7f2 100%) !important;
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+html.light .editorial-divider {
+  background: linear-gradient(90deg, transparent 0%, rgba(146, 103, 28, 0.25) 50%, transparent 100%) !important;
+}
+
+html.light .gold-gradient-text {
+  background: linear-gradient(135deg, #7c540e 0%, #9e7123 50%, #b88d3b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Form Controls & Inputs */
+html.light input,
+html.light textarea,
+html.light select {
+  background-color: #ffffff !important;
+  color: #12141a !important;
+  border-color: #ded8cc !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #8c93a4 !important;
+}
+
+/* Scrollbar Light Styling */
+html.light ::-webkit-scrollbar-track {
+  background: #f4f0e6;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #d5cebf;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #92671c;
+}
+
